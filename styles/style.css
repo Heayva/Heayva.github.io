@@ -1,25 +1,40 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body {
     margin: 0;
     background-color: rgb(53, 58, 65);
+    color:aliceblue
+    
 }
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
 
+}
 .banner {
     height: 100vh;
     width: 100%;
     min-height: 0px;
-    
     overflow: hidden;
-    background-image: url(../images/minecraft.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/minecraft.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
+
 .navbar {
     height: 80px;
     width: 100%;
     background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.25));
+    position: fixed;
 }
 
 .name {
@@ -37,7 +52,7 @@ body {
 
 
 
-.logo img{
+.logo {
     float: right;
     height: 50px;
     width: 50px;
@@ -45,6 +60,7 @@ body {
     margin-top: 15px;
     margin-right: 45px;
 }
+
 
 nav {
     float: right;
@@ -64,9 +80,64 @@ nav a {
     margin: 20px;
 }
 
+
+nav a:active {
+    color: black;
+    font-weight: bolder;
+}
+
+#banner2 {
+    height:600px;
+    width: auto;
+    margin-right: 150px;
+}
+#banner-text {
+    float: left;
+    text-align: center;
+    margin-top: 200px;
+    width: 650px;
+    height: 600px;
+
+}
+
+#occupation{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+
+}
+
+#banner-text h1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    font-family:'Times New Roman', Times, serif;
+    font-size: 90px;
+    font-weight:400;
+
+}
+
+#banner-text p {
+    font-family:"Oxygen", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+#jhin {
+    height: 100%;
+    margin-top: 200px;
+    float: right;
+    width: 400px;
+    border-radius: 100px;
+}
+
+
 .fade {
     height: 80px;
     background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5));
+    margin-bottom: 50px;
 }
 
 .aboutme {
@@ -89,4 +160,22 @@ nav a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(109, 109, 110);
+}
+
+/*sections*/
+section {
+    margin-left: 150px;
+}
+
+#about{
+    height: 100vh;
+}
+
+#about section {
+    width: 750px;
+    float: left;
+    background-color: blue;
+}
+#about section h1{
+    text-align: center;
 }
